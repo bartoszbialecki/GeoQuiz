@@ -18,6 +18,7 @@
 		56455578243164E000A8718D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 56455575243164E000A8718D /* countries.json */; };
 		56455579243164E000A8718D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56455576243164E000A8718D /* Country.swift */; };
 		5645557D2431654200A8718D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645557C2431654100A8718D /* ContentView.swift */; };
+		5645557F2431684E00A8718D /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645557E2431684E00A8718D /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		56455575243164E000A8718D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		56455576243164E000A8718D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		5645557C2431654100A8718D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5645557E2431684E00A8718D /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				564555592431648100A8718D /* GeoQuizTests.swift */,
 				5645555B2431648100A8718D /* Info.plist */,
+				5645557E2431684E00A8718D /* GameTests.swift */,
 			);
 			path = GeoQuizTests;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5645555A2431648100A8718D /* GeoQuizTests.swift in Sources */,
+				5645557F2431684E00A8718D /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
