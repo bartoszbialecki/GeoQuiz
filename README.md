@@ -1,4 +1,4 @@
-# GeoQuiz
+# GeoQuiz [![Build Status](https://travis-ci.com/bartoszbialecki/GeoQuiz.svg?branch=master)](https://travis-ci.com/bartoszbialecki/GeoQuiz)
 
 This is a application used as a test subject for lessons for software tester.
 
