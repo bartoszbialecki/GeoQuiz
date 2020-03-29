@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		564555432431648100A8718D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564555422431648100A8718D /* AppDelegate.swift */; };
+		564555452431648100A8718D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564555442431648100A8718D /* SceneDelegate.swift */; };
+		564555492431648100A8718D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564555482431648100A8718D /* Assets.xcassets */; };
+		5645554C2431648100A8718D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5645554B2431648100A8718D /* Preview Assets.xcassets */; };
+		5645554F2431648100A8718D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645554D2431648100A8718D /* LaunchScreen.storyboard */; };
+		5645555A2431648100A8718D /* GeoQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564555592431648100A8718D /* GeoQuizTests.swift */; };
+		564555652431648100A8718D /* GeoQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564555642431648100A8718D /* GeoQuizUITests.swift */; };
+		56455577243164E000A8718D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56455574243164E000A8718D /* Game.swift */; };
+		56455578243164E000A8718D /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 56455575243164E000A8718D /* countries.json */; };
+		56455579243164E000A8718D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56455576243164E000A8718D /* Country.swift */; };
+		5645557D2431654200A8718D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645557C2431654100A8718D /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		564555562431648100A8718D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 564555372431648100A8718D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5645553E2431648100A8718D;
+			remoteInfo = GeoQuiz;
+		};
+		564555612431648100A8718D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 564555372431648100A8718D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5645553E2431648100A8718D;
+			remoteInfo = GeoQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5645553F2431648100A8718D /* GeoQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		564555422431648100A8718D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		564555442431648100A8718D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		564555482431648100A8718D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5645554B2431648100A8718D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5645554E2431648100A8718D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		564555502431648100A8718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564555552431648100A8718D /* GeoQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		564555592431648100A8718D /* GeoQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoQuizTests.swift; sourceTree = "<group>"; };
+		5645555B2431648100A8718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564555602431648100A8718D /* GeoQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		564555642431648100A8718D /* GeoQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoQuizUITests.swift; sourceTree = "<group>"; };
+		564555662431648100A8718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56455574243164E000A8718D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		56455575243164E000A8718D /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		56455576243164E000A8718D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		5645557C2431654100A8718D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5645553C2431648100A8718D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564555522431648100A8718D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5645555D2431648100A8718D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		564555362431648100A8718D = {
+			isa = PBXGroup;
+			children = (
+				564555412431648100A8718D /* GeoQuiz */,
+				564555582431648100A8718D /* GeoQuizTests */,
+				564555632431648100A8718D /* GeoQuizUITests */,
+				564555402431648100A8718D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		564555402431648100A8718D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5645553F2431648100A8718D /* GeoQuiz.app */,
+				564555552431648100A8718D /* GeoQuizTests.xctest */,
+				564555602431648100A8718D /* GeoQuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		564555412431648100A8718D /* GeoQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				564555722431649900A8718D /* App */,
+				56455573243164E000A8718D /* Models */,
+				5645557A243164EF00A8718D /* Resources */,
+				5645557B2431654100A8718D /* Views */,
+			);
+			path = GeoQuiz;
+			sourceTree = "<group>";
+		};
+		5645554A2431648100A8718D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5645554B2431648100A8718D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		564555582431648100A8718D /* GeoQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				564555592431648100A8718D /* GeoQuizTests.swift */,
+				5645555B2431648100A8718D /* Info.plist */,
+			);
+			path = GeoQuizTests;
+			sourceTree = "<group>";
+		};
+		564555632431648100A8718D /* GeoQuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				564555642431648100A8718D /* GeoQuizUITests.swift */,
+				564555662431648100A8718D /* Info.plist */,
+			);
+			path = GeoQuizUITests;
+			sourceTree = "<group>";
+		};
+		564555722431649900A8718D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				564555422431648100A8718D /* AppDelegate.swift */,
+				564555442431648100A8718D /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		56455573243164E000A8718D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56455574243164E000A8718D /* Game.swift */,
+				56455575243164E000A8718D /* countries.json */,
+				56455576243164E000A8718D /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5645557A243164EF00A8718D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				564555482431648100A8718D /* Assets.xcassets */,
+				5645554D2431648100A8718D /* LaunchScreen.storyboard */,
+				564555502431648100A8718D /* Info.plist */,
+				5645554A2431648100A8718D /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5645557B2431654100A8718D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5645557C2431654100A8718D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5645553E2431648100A8718D /* GeoQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 564555692431648100A8718D /* Build configuration list for PBXNativeTarget "GeoQuiz" */;
+			buildPhases = (
+				5645553B2431648100A8718D /* Sources */,
+				5645553C2431648100A8718D /* Frameworks */,
+				5645553D2431648100A8718D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoQuiz;
+			productName = GeoQuiz;
+			productReference = 5645553F2431648100A8718D /* GeoQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		564555542431648100A8718D /* GeoQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5645556C2431648100A8718D /* Build configuration list for PBXNativeTarget "GeoQuizTests" */;
+			buildPhases = (
+				564555512431648100A8718D /* Sources */,
+				564555522431648100A8718D /* Frameworks */,
+				564555532431648100A8718D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				564555572431648100A8718D /* PBXTargetDependency */,
+			);
+			name = GeoQuizTests;
+			productName = GeoQuizTests;
+			productReference = 564555552431648100A8718D /* GeoQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5645555F2431648100A8718D /* GeoQuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5645556F2431648100A8718D /* Build configuration list for PBXNativeTarget "GeoQuizUITests" */;
+			buildPhases = (
+				5645555C2431648100A8718D /* Sources */,
+				5645555D2431648100A8718D /* Frameworks */,
+				5645555E2431648100A8718D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				564555622431648100A8718D /* PBXTargetDependency */,
+			);
+			name = GeoQuizUITests;
+			productName = GeoQuizUITests;
+			productReference = 564555602431648100A8718D /* GeoQuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		564555372431648100A8718D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Bartosz Bialecki";
+				TargetAttributes = {
+					5645553E2431648100A8718D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					564555542431648100A8718D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5645553E2431648100A8718D;
+					};
+					5645555F2431648100A8718D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5645553E2431648100A8718D;
+					};
+				};
+			};
+			buildConfigurationList = 5645553A2431648100A8718D /* Build configuration list for PBXProject "GeoQuiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 564555362431648100A8718D;
+			productRefGroup = 564555402431648100A8718D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5645553E2431648100A8718D /* GeoQuiz */,
+				564555542431648100A8718D /* GeoQuizTests */,
+				5645555F2431648100A8718D /* GeoQuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5645553D2431648100A8718D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5645554F2431648100A8718D /* LaunchScreen.storyboard in Resources */,
+				5645554C2431648100A8718D /* Preview Assets.xcassets in Resources */,
+				56455578243164E000A8718D /* countries.json in Resources */,
+				564555492431648100A8718D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564555532431648100A8718D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5645555E2431648100A8718D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5645553B2431648100A8718D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564555432431648100A8718D /* AppDelegate.swift in Sources */,
+				5645557D2431654200A8718D /* ContentView.swift in Sources */,
+				564555452431648100A8718D /* SceneDelegate.swift in Sources */,
+				56455579243164E000A8718D /* Country.swift in Sources */,
+				56455577243164E000A8718D /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		564555512431648100A8718D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5645555A2431648100A8718D /* GeoQuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5645555C2431648100A8718D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564555652431648100A8718D /* GeoQuizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		564555572431648100A8718D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5645553E2431648100A8718D /* GeoQuiz */;
+			targetProxy = 564555562431648100A8718D /* PBXContainerItemProxy */;
+		};
+		564555622431648100A8718D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5645553E2431648100A8718D /* GeoQuiz */;
+			targetProxy = 564555612431648100A8718D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5645554D2431648100A8718D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5645554E2431648100A8718D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		564555672431648100A8718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		564555682431648100A8718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5645556A2431648100A8718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GeoQuiz/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = UHD8FCH9DQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GeoQuiz/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartoszbialecki.GeoQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5645556B2431648100A8718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GeoQuiz/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = UHD8FCH9DQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GeoQuiz/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartoszbialecki.GeoQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5645556D2431648100A8718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHD8FCH9DQ;
+				INFOPLIST_FILE = GeoQuizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartoszbialecki.GeoQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoQuiz.app/GeoQuiz";
+			};
+			name = Debug;
+		};
+		5645556E2431648100A8718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHD8FCH9DQ;
+				INFOPLIST_FILE = GeoQuizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartoszbialecki.GeoQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoQuiz.app/GeoQuiz";
+			};
+			name = Release;
+		};
+		564555702431648100A8718D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHD8FCH9DQ;
+				INFOPLIST_FILE = GeoQuizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartoszbialecki.GeoQuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoQuiz;
+			};
+			name = Debug;
+		};
+		564555712431648100A8718D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHD8FCH9DQ;
+				INFOPLIST_FILE = GeoQuizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bartoszbialecki.GeoQuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoQuiz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5645553A2431648100A8718D /* Build configuration list for PBXProject "GeoQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564555672431648100A8718D /* Debug */,
+				564555682431648100A8718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		564555692431648100A8718D /* Build configuration list for PBXNativeTarget "GeoQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5645556A2431648100A8718D /* Debug */,
+				5645556B2431648100A8718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5645556C2431648100A8718D /* Build configuration list for PBXNativeTarget "GeoQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5645556D2431648100A8718D /* Debug */,
+				5645556E2431648100A8718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5645556F2431648100A8718D /* Build configuration list for PBXNativeTarget "GeoQuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564555702431648100A8718D /* Debug */,
+				564555712431648100A8718D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 564555372431648100A8718D /* Project object */;
+}
