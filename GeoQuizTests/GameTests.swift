@@ -50,6 +50,15 @@ class GameTests: XCTestCase {
         XCTAssertTrue(game.done(), "Game shoule be over")
     }
     
+    func testCannotGenerateNewQuestionWithoutPlay() {
+        let firstQuestion = game.questionToShow
+        
+        game.generateQuestionAndRandomAnswer()
+        game.generateQuestionAndRandomAnswer()
+        
+        XCTAssertEqual(game.questionToShow, firstQuestion)
+    }
+    
     func testResetGame() {
         XCTAssertEqual(game.score, 0)
         game.play(guess: true)
