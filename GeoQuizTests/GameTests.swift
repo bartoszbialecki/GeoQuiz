@@ -38,5 +38,17 @@ class GameTests: XCTestCase {
         
         XCTAssertTrue(game.done(), "Game shoule be over")
     }
+    
+    func testResetGame() {
+        XCTAssertEqual(game.score, 0)
+        game.play(guess: true)
+        game.generateQuestionAndRandomAnswer()
+        game.score = 1
+        XCTAssertEqual(game.score, 1)
+        
+        game.resetGame()
+        
+        XCTAssertEqual(game.score, 0, "Score after reset game should be 0")
+    }
 }
 
