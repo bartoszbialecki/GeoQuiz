@@ -27,12 +27,16 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.score, 0, "Score is 0")
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testGameOverAfterMaxAllowedAttempts() {
+        for _ in 1..<game.maxQuestionsToShow {
+            game.play(guess: true)
+            game.generateQuestionAndRandomAnswer()
+            XCTAssertFalse(game.done(), "Game should go on")
         }
+        
+        game.play(guess: true)
+        
+        XCTAssertTrue(game.done(), "Game shoule be over")
     }
-
 }
 
