@@ -27,6 +27,17 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.score, 0, "Score is 0")
     }
 
+    func testNewQuestionIsGenerated() {
+        let firstQuestion = game.questionToShow
+        
+        game.play(guess: true)
+        game.generateQuestionAndRandomAnswer()
+        
+        XCTAssertTrue(game.questionToShow.count > 0, "Question is empty")
+        XCTAssertTrue(game.randomAnswerToShow.count > 0, "Answer is empty")
+        XCTAssertNotEqual(game.questionToShow, firstQuestion)
+    }
+    
     func testGameOverAfterMaxAllowedAttempts() {
         for _ in 1..<game.maxQuestionsToShow {
             game.play(guess: true)
