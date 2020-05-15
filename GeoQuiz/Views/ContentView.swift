@@ -24,6 +24,7 @@ struct ContentView: View {
                         Spacer()
                         Text("Score: \(self.game.score)")
                             .transition(.scale)
+                            .accessibility(identifier: "score")
                     }
                     .padding()
                     .padding(.bottom, 20)
@@ -40,12 +41,14 @@ struct ContentView: View {
                         .animation(.default)
                         .offset(x: self.showQuestion ? 0 : -geometry.size.width)
                         .opacity(self.showQuestion ? 1 : 0)
+                        .accessibility(identifier: "question")
                     
                     Text(self.game.randomAnswerToShow)
                         .font(.system(size: 42))
                         .foregroundColor(Color(UIColor.systemIndigo))
                         .animation(.default)
                         .offset(x: self.showQuestion ? 0 : geometry.size.width)
+                        .accessibility(identifier: "answer")
                     
                     Spacer()
                     
@@ -55,11 +58,13 @@ struct ContentView: View {
                                 .font(.system(size: 28))
                                 .foregroundColor(.green)
                                 .transition(.opacity)
+                                .accessibility(identifier: "correctAnswer")
                         } else {
                             Text("Wrong")
                                 .font(.system(size: 28))
                                 .foregroundColor(.red)
                                 .transition(.opacity)
+                                .accessibility(identifier: "wrongAnswer")
                         }
                     }
                     
@@ -74,6 +79,7 @@ struct ContentView: View {
                             Image(systemName: "xmark.circle.fill")
                                 .font(.system(size: 80))
                         }
+                        .accessibility(identifier: "noButton")
                         
                         Spacer()
                         
@@ -85,6 +91,7 @@ struct ContentView: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .font(.system(size: 80))
                         }
+                        .accessibility(identifier: "yesButton")
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 20)
