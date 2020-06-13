@@ -103,12 +103,13 @@ struct ContentView: View {
             .alert(isPresented: self.$showGameOver) {
                 Alert(title: Text("Game Over"),
                       message: Text("Your score is \(self.game.score)"),
-                      primaryButton: .default(Text("Start New Game")) {
+                      dismissButton: .default(Text("Start New Game")) {
                         withAnimation {
                             self.game.resetGame()
                         }
-                    }, secondaryButton: .cancel())
+                    })
             }
+            .disabled(self.showGameOver)
         }
         .onAppear() {
             self.game.startGame()
